@@ -4,3 +4,5 @@ git branch  “分支名”是用来创建一个一个分支的命令
 git checkout “分支名”：是用来切换到制定分支
 					二者合并代码为：git checkout -b "分支名"
 git branch：查看分支
+git merge “分支名”：合并master与指定分支的代码
+git branch -d "分支名"：删除指定分支
