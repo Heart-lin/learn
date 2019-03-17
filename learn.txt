@@ -1,2 +1,6 @@
 这是一行文本；
 this is a text from learn.txt
+git branch  “分支名”是用来创建一个一个分支的命令
+git checkout “分支名”：是用来切换到制定分支
+					二者合并代码为：git checkout -b "分支名"
+git branch：查看分支
