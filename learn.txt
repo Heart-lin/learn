@@ -1,1 +1,2 @@
 这是一行文本；
+this is a text from learn.txt
