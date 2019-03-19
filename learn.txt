@@ -1,17 +1,27 @@
-this is a text from learn.txt
-��֧�ύ
+﻿this is a text from learn.txt
+创建版本库
+	git init 初始化生成.git文件.
+版本回退
+	git log 查看提交日志
+	git reset --hard '日志代号'
+	cat "文件名"
+分支提交
 	
-	git branch  ����֧��������������һ��һ����֧������
-	git checkout ����֧�������������л����ƶ���֧
-					//���ߺϲ�����Ϊ��git checkout -b "��֧��"
-	git branch���鿴��֧
-	git merge ����֧�������ϲ�master��ָ����֧�Ĵ���
-	git branch -d "��֧��"��ɾ��ָ����֧
+	git branch  “分支名”是用来创建一个一个分支的命令
+	git checkout “分支名”：是用来切换到制定分支
+					//二者合并代码为：git checkout -b "分支名"
+	git branch：查看分支
+	git merge “分支名”：合并master与指定分支的代码
+	git branch -d "分支名"：删除指定分支
 
-����һ�γ�ͻѧϰ
-	git log --graph �鿴��֧�ϲ�ͼ
-	git log --graph --pretty=oneline --abbrev-commit ����commit��չʾ
+这是一次冲突学习
+	git log --graph 查看分支合并图
+	git log --graph --pretty=oneline --abbrev-commit 所有commit的展示
 
-��֧��������
-git git merge --no-ff -m "merge with no-ff" ����֧����
-�ϲ���֧ʱ������--no-ff�����Ϳ�������ͨģʽ�ϲ����ϲ������ʷ�з�֧���ܿ��������������ϲ�����fast forward�ϲ��Ϳ����������������ϲ���
+分支管理策略
+	git git merge --no-ff -m "merge with no-ff" “分支名”
+合并分支时，加上--no-ff参数就可以用普通模式合并，合并后的历史有分支，能看出来曾经做过合并，而fast forward合并就看不出来曾经做过合并。
+
+bug修复
+	git stash 保存当前修改
+	git 的默认保存
