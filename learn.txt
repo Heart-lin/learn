@@ -26,4 +26,9 @@ bug修复
 	git stash 保存当前修改
 	默认保存
 
+<<<<<<< HEAD
 这是主线上的master
+=======
+
+新的branch
+>>>>>>> featurel
